@@ -1,0 +1,58 @@
+.productList {
+  display: flex;
+  margin: 0 0 0 -3rem;
+}
+.product {
+  margin-left: 30%;
+}
+.list1 {
+  width: 3rem;
+}
+.list2 {
+  width: 7rem;
+}
+.list3 {
+  width: 3rem;
+}
+.list4 {
+  width: 7rem;
+}
+.list5 {
+  width: 7rem;
+}
+.product h1 {
+  margin-bottom: 1rem;
+}
+.productList li {
+  list-style: none;
+  padding: 0 1.5rem;
+  border: 1.5px solid black;
+  text-align: center;
+}
+.inputBox {
+  border: 2.5px solid #31c6f5;
+  margin-bottom: 1rem;
+  padding: 12px;
+  width: 22rem;
+  font-size: 16px;
+}
+.submitBox {
+  width: 7rem;
+  padding: 0.3rem;
+  background-color: #b0d6ff;
+  border: 1px solid black;
+  border-radius: 8%;
+  font-size: 17px;
+}
+.submitBox:hover {
+  cursor: pointer;
+}
+.searchBox {
+  margin-bottom: 0.5rem;
+  width: 26rem;
+  font-size: 1.1rem;
+  padding: 5px 18px;
+  border: 2px solid #0089bf;
+  border-radius: 11px;
+  margin-left: -2.5rem;
+}

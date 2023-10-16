@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import Nav from './Nav'
 import './App.css';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SignUp from './components/SignUp';
+//import privateComponent from './components/privateComponent';
+import Login from './components/Login';
+import AddProduct from './components/AddProduct'
+import ProductList from './components/ProductList';
+import UpdateProduct from './components/UpdateProduct';
+import Profile from './components/Profile';
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Nav />
+        <Routes>
+          <Route element={<privateComponent />}></Route>
+          <Route path="/" element={<ProductList />}></Route>
+          <Route path="/add" element={<AddProduct />}></Route>
+          <Route path="/update/:id" element={<UpdateProduct />}></Route>
+          <Route path="/logout" element={<h1>logout Product listening Component</h1>}></Route>
+          <Route path="/profile" element={<Profile />}></Route>
+          <Route path='/signup' element={<SignUp />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

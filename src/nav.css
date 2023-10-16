@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav-ul {
+  background-color: rgb(103, 175, 216);
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.nav-li a {
+  color: #0d4257;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2rem;
+}
+.nav-right {
+  background-color: rgb(103, 175, 216);
+  display: flex;
+  height: 4rem;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
