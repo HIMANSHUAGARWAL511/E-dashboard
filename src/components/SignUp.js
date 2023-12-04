@@ -8,6 +8,7 @@ function SignUp() {
     useEffect(() => {
         let auth = localStorage.getItem('user');
         if (auth) {
+
             navigate('/');
         }
     })
