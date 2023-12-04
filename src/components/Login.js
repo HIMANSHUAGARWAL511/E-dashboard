@@ -14,7 +14,7 @@ const Login = () => {
     const Navigate = useNavigate();
     const collect = async () => {
         console.log(email, password);
-        let result = await fetch('http://localhost:5000/login', {
+        let result = await fetch('https://e-dashboard-backend-sj5b.onrender.com/login', {
             method: 'post',
             body: JSON.stringify({ email, password }),
             headers: {

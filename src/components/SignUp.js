@@ -13,7 +13,7 @@ function SignUp() {
     })
     const collect = (async () => {
         console.log(name, password, email);
-        let result = await fetch("http://localhost:5000/register", {
+        let result = await fetch("https://e-dashboard-backend-sj5b.onrender.com/register", {
             method: "post",
             body: JSON.stringify({ name, email, password }),
             headers: {

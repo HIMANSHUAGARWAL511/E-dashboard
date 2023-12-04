@@ -14,7 +14,7 @@ const UpdateProduct = () => {
     }, [])
 
     const getProductDetails = async () => {
-        let result = await fetch(`http://localhost:5000/product/${params.id}`);
+        let result = await fetch(`https://e-dashboard-backend-sj5b.onrender.com/product/${params.id}`);
         result = await result.json()
         console.log(result);
         setName(result.name);
@@ -25,7 +25,7 @@ const UpdateProduct = () => {
 
     const updateSubmit = async () => {
         console.log(name, price, category, company);
-        let result = await fetch(`http://localhost:5000/product/${params.id}`, {
+        let result = await fetch(`https://e-dashboard-backend-sj5b.onrender.com/${params.id}`, {
             method: 'put',
             body: JSON.stringify({ name, price, category, company }),
             headers: {
